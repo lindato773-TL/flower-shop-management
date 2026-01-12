@@ -1,4 +1,4 @@
-# 🌸 Fiama Flower Shop Management System
+# 🌸 Lady Flower Shop Management System
 
 A modern React-based flower shop inventory management system with CRUD operations.
 

@@ -3,10 +3,10 @@ import { Flower2, Plus, Edit2, Trash2, Search, Package, DollarSign, ShoppingCart
 
 const App = () => {
   const [products, setProducts] = useState([
-    { id: 1, name: 'Pink Tulips', category: 'Tulips', price: 55.00, stock: 45, image: '🌷', description: 'Beautiful pink tulips' },
-    { id: 2, name: 'Purple Tulip Bouquet', category: 'Tulips', price: 70.00, stock: 30, image: '💐', description: 'Elegant purple tulip arrangement' },
-    { id: 3, name: 'Spring Mix', category: 'Mixed', price: 79.00, stock: 25, image: '🌼', description: 'Fresh spring flower mix' },
-    { id: 4, name: 'Rose Basket', category: 'Roses', price: 39.00, stock: 50, image: '🌹', description: 'Pink roses in wicker basket' }
+    { id: 1, name: 'Pink Tulips', category: 'Tulips', price: 10.00, stock: 45, image: '🌷', description: 'Beautiful pink tulips' },
+    { id: 2, name: 'Purple Tulip Bouquet', category: 'Tulips', price: 50, stock: 30, image: '💐', description: 'Elegant purple tulip arrangement' },
+    { id: 3, name: 'Spring Mix', category: 'Mixed', price: 55.00, stock: 77, image: '🌼', description: 'Fresh spring flower mix' },
+    { id: 4, name: 'Rose Basket', category: 'Roses', price: 19.00, stock: 50, image: '🌹', description: 'Pink roses in wicker basket' }
   ]);
 
   const [showModal, setShowModal] = useState(false);
@@ -127,7 +127,6 @@ const App = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Statistics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-pink-500">
             <div className="flex items-center justify-between">
@@ -160,7 +159,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Filters */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative">
@@ -262,7 +260,6 @@ const App = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -373,7 +370,7 @@ const App = () => {
                   }}
                   className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                  Cancel
+                  cancel
                 </button>
                 <button
                   onClick={handleSubmit}

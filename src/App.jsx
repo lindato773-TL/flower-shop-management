@@ -102,14 +102,13 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
-      {/* Header */}
       <div className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Flower2 className="h-10 w-10 text-pink-500" />
               <div>
-                <h1 className="text-3xl font-bold text-gray-900">Fiama Flowers</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Lady Flowers</h1>
                 <p className="text-sm text-gray-500">Management System</p>
               </div>
             </div>
@@ -187,7 +186,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Products Table */}
         <div className="bg-white rounded-xl shadow-md overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
